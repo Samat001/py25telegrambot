@@ -39,6 +39,8 @@ def start_game(msg,random_number,p):
 def check_func(msg, random_number , p):
     if msg.text == str(random_number):
         bot.send_message(msg.chat.id,'Ты не лох!')
+    elif int(msg.text) > 10 :
+        print(f'ты проебал попытку тупо, так как нужно было число внутри 10  попыток осталось{p}')
     elif p==0:
         bot.send_message(msg.chat.id, f'Лошара попытки закончились число было {random_number}')
     else:
@@ -53,8 +55,10 @@ bot.polling()
 
 '''
 git init 
+git remote add origin ssh/htps
+
+
 git add . 
 git commit -m 'names comit'
-git remote add origin ssh/htps
 git push origin master
 '''
