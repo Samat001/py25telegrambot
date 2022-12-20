@@ -48,3 +48,13 @@ def check_func(msg, random_number , p):
 
 
 bot.polling()
+
+
+
+'''
+git init 
+git add . 
+git commit -m 'names comit'
+git remote add origin ssh/htps
+git push origin master
+'''
